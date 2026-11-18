@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tuse — InnerTube Music</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header>
+        <h1>Tuse</h1>
+        <form id="search-form">
+          <input id="search" name="q" placeholder="Search music" autocomplete="off" />
+          <button type="submit">Search</button>
+        </form>
+      </header>
+
+      <section id="results" aria-live="polite">
+        <div class="empty-state">Search for a song or artist</div>
+      </section>
+
+      <footer class="player">
+        <div id="now-playing">Nothing playing</div>
+        <audio id="audio" controls></audio>
+      </footer>
+    </main>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
